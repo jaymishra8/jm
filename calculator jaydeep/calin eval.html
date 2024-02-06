@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>eval</title>
+
+
+	<style >
+		body{
+			
+		}
+		table{
+			background:linear-gradient(orangered,white,green);
+			margin-top: 150px;
+			border-radius: 5px;
+		}
+		input[type=text]{
+			height: 65px;
+			width: 215px;
+			border-radius: 20px;
+		}
+		
+		#plus1{
+			background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plus2{
+			background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plus3{
+			background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plusd{
+			background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plus4{
+			background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plus5{
+				background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plus6{
+				background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plusm{
+				background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plus7{
+				background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plus8{
+				background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plus9{
+				background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plusmu{
+				background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plusp{
+				background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plus0{
+				background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#pluseq{
+			background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		#plusc{
+				background-color: orangered;
+			height: 35px;
+			width: 35px;
+			padding:20px;
+			border-radius: 8px;
+		}
+		
+	</style>
+</head>
+<body>
+	<center>
+	<table>
+	<tr>
+		<td colspan="4"><input type="text" id="result"/></td>
+
+		
+	</tr>
+	<!-- <tr> -->
+		<!-- <td><input type="button" value="0" onclick="view('0')"/></td>
+
+		<td><input type="button" value="*" onclick="view('*')"/></td>
+	</tr> -->
+	<tr>
+		<td><input type="button" id="plus1" value="1" onclick="view('1')"/></td>
+		<td><input type="button" id="plus2" value="2" onclick="view('2')"/></td>
+		<td><input type="button" id="plus3" value="3" onclick="view('3')"/></td>
+		<td><input type="button" id="plusd" value="/" onclick="view('/')"/></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="plus4" value="4" onclick="view('4')"/></td>
+		<td><input type="button" id="plus5" value="5" onclick="view('5')"/></td>
+		<td><input type="button" id="plus6" value="6" onclick="view('6')"/></td>
+		<td><input type="button" id="plusm" value="-" onclick="view('-')"/></td>
+	</tr>
+	<tr>
+		<td><input type="button"  id="plus7" value="7" onclick="view('7')"/></td>
+		<td><input type="button"  id="plus8" value="8" onclick="view('8')"/></td>
+		<td><input type="button"  id="plus9" value="9" onclick="view('9')"/></td>
+  		<td><input type="button"  id="plusmu" value="*" onclick="view('*')"/></td>
+		
+	</tr>
+	<tr>
+			<td><input type="button" id="plusp" value="+" onclick="view('+')"/></td>
+			<td><input type="button" id="plus0" value="0" onclick="view('0')"/></td>
+		    <td><input type="button" id="pluseq" value="=" onclick="compute('=')"/></td>
+		    <td><input type="button" id="plusc" value="c" onclick="clr()"/></td>
+	</tr>
+	</table>
+</center>
+	<script>
+		function view(num){
+			document.getElementById("result").value+=num
+		}
+		function compute(){
+			let x=document.getElementById("result").value
+			let y=eval(x)
+			document.getElementById("result").value=y
+		}
+		function clr(){
+			document.getElementById("result").value=""
+		}
+	</script>
+</body>
+</html>
